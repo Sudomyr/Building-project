@@ -1,0 +1,55 @@
+.footer-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .first-col {
+    clear: both;
+    color: #888888;
+    font-size: 12px;
+
+    a {
+      height: 47px;
+      width: 100px;
+      display: inline-block;
+      background: url(../images/Catchup.png) no-repeat 50%;
+    }
+  }
+  .second-col {
+    font-family: RobotoR;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 20px;
+  }
+  .third-col {
+    margin-top: 5px;
+
+    .footer-socials > li > a {
+      color: #888888 !important;
+      font-size: 12px;
+      font-family: RobotoR;
+      padding-left: 20px;
+    }
+    .footer-socials > .active > a:before,
+    .footer-socials > li:hover > a:before {
+      position: absolute;
+      content: "";
+      height: 1px !important;
+      width: 25px;
+      top: 50%;
+      left: -9px;
+      background: #888888;
+    }
+    .footer-socials > .active > a:after,
+    .footer-socials > li:hover > a:after {
+      position: absolute;
+      content: ".";
+      top: 24%;
+      right: 8px;
+      color: #888888;
+    }
+    .footer-socials > li > a:hover,
+    .footer-socials > li > a:focus {
+      background: transparent;
+    }
+  }
+}

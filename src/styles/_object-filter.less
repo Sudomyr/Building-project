@@ -1,0 +1,110 @@
+.change-filter {
+  margin-bottom: 20px;
+  display: none;
+
+  a {
+    border: 1px solid @mygreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: RobotoB;
+    color: @mygreen;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      color: #fcfcfc;
+      background: #21b25f;
+    }
+  }
+}
+.open-filter {
+  display: block !important;
+}
+.change-btn-open {
+  color: #fcfcfc !important;
+  background: #21b25f;
+}
+
+.object-filter-container {
+  padding-right: 0px;
+
+  .object-filter-form {
+
+    .object-filter-box {
+
+      legend {
+        font-family: RobotoB;
+        font-size: 14px;
+        border-bottom: none;
+        margin-bottom: 5px;
+      }
+      .form-group {
+        margin-bottom: 0px;
+
+        input {
+          margin-top: 0px;
+        }
+        label {
+          margin-bottom: 0px;
+          margin-left: 3px;
+          font-family: RobotoR;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+      .search-btn {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        background-color: @mygreen;
+        border-color: @mygreen;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.city-field {
+  margin-top: 10px;
+}
+.district-field,
+.company-field,
+.price-field {
+  margin-top: 20px;
+}
+
+.price-form-group {
+  font-family: RobotoR;
+  font-size: 10px;
+  margin-top: 10px;
+
+  .low-price-input {
+    width: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #ccc;
+    }
+  }
+  .high-price-input {
+    width: 50px;
+    display: inline-block;
+    margin-left: 5px;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #ccc;
+    }
+  }
+  .range-input {
+    margin-top: 15px !important;
+  }
+}

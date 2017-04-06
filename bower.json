@@ -1,0 +1,23 @@
+{
+  "name": "final_project",
+  "description": "My first\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~F\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C Project",
+  "main": "gulpfile.js",
+  "authors": [
+    "Sudomyr"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

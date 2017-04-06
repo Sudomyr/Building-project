@@ -1,0 +1,133 @@
+.site-path-box {
+
+  .site-path {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 0px;
+    margin-bottom: 15px;
+
+    .site-path-item {
+      display: inline-block;
+      font-family: RobotoR;
+      font-size: 10px;
+      color: @mygreen;
+
+      .site-path-link {
+        text-decoration: none;
+        color: #888888;
+      }
+    }
+    .site-path-item-active:before {
+      content: '//';
+      color: #ccc;
+      padding: 0px;
+    }
+  }
+}
+
+.company-list {
+
+  .company-list-item {
+    margin-bottom: 20px;
+
+    .company-img-container {
+      padding-right: 0px;
+
+      img {
+        width: 90%;
+      }
+    }
+    .company-inform-container {
+      padding-left: 0px;
+
+      .company-inform-box {
+        background: #ededed;
+        height: 180px;
+        padding: 10px 20px 10px 30px;
+
+        .company-inform-header {
+          display: inline-block;
+
+          h3 {
+            font-family: RobotoB;
+            font-size: 36px;
+            color: @mygreen;
+            margin-top: 0px;
+            margin-bottom: 8px;
+          }
+        }
+        .company-inform-rating {
+          display: inline-block;
+          float: right;
+          color: #ffd800;
+          font-size: 18px;
+          margin: 8px 0px;
+        }
+        .company-inform-text {
+          font-family: RobotoR;
+          font-size: 13px;
+          color: #515151;
+        }
+      }
+    }
+  }
+  .company-link:hover {
+
+    .company-inform-box {
+      background: @mygreen;
+
+      .company-inform-header > h3 {
+        color: #ffffff;
+      }
+      .company-inform-text {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.company-list-pagination-box {
+  text-align: center;
+
+  .company-pagination {
+    margin-top: 60px;
+
+    .next-prev > a {
+      border: 1px solid @mygreen;
+      font-family: RobotoB;
+      font-size: 14px;
+      color: @mygreen;
+      margin: 0px 15px;
+      border-radius: 5px;
+
+      &:hover {
+        background: @mygreen;
+        color: #fff;
+      }
+    }
+  }
+  .company-pagination > li > a {
+    border: none;
+    font-family: RobotoB;
+    font-size: 16px;
+    color: #515151;
+  }
+  .company-pagination > .active > a {
+    background: transparent;
+    color: @mygreen;
+  }
+  .company-pagination > li > a:hover {
+    color: @mygreen;
+    background: transparent;
+  }
+  .company-pagination > .disabled > a {
+    border-color: #ccc;
+    color: #ccc;
+
+    &:hover {
+      border-color: #ccc;
+      color: #ccc;
+      background: transparent;
+    }
+  }
+}

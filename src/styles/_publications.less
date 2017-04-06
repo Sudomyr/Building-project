@@ -1,0 +1,222 @@
+.public-header {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 27px;
+
+  .public-header-text {
+    font-family: RobotoL;
+    font-size: 36px;
+    color: #393939;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-right: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .public-header-btn-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    z-index: 3;
+    padding-left: 20px;
+    line-height: 36px;
+
+    .public-header-btn {
+      background: transparent;
+      border: 1px solid #999;
+      color: #999;
+      border-radius: 15px;
+      font-size: 10px;
+      font-family: RobotoM;
+      padding: 4px 10px;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+        background: #999;
+      }
+    }
+  }
+}
+.public-header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: @mygreen;
+  height: 1px;
+  left: 0;
+  top: 50%;
+}
+
+.public-and-top-col {
+
+  .public-thumbnail {
+    border: none;
+    padding: 0px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:hover {
+      .caption {
+        background: @mygreen;
+
+        h3 {
+          color: #fff;
+        }
+        .public-thumbnail-text {
+          color: #fff !important;
+        }
+        .public-thumbnail-link {
+          color: #fff;
+
+          .socials-btns-link {
+
+            .fa-external-link {
+              color: #fff !important;
+            }
+          }
+        }
+      }
+    }
+    .active {
+      background: @mygreen !important;
+
+      h3 {
+        color: #fff;
+      }
+      .public-thumbnail-text {
+        color: #fff !important;
+      }
+      .public-thumbnail-link {
+        color: #fff !important;
+
+        .socials-btns-link {
+
+          .fa-external-link {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .caption {
+      background: #f4f4f4;
+      padding: 5px;
+
+      h3 {
+        font-family: RobotoB;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .public-thumbnail-header {
+        position: relative;
+
+        .public-thumbnail-text {
+          font-family: RobotoR;
+          font-size: 12px;
+          margin-left: 10px;
+          margin-bottom: 15px;
+          color: #404040;
+        }
+        .public-read-more {
+          width: 13px;
+          height: 25px;
+          position: absolute;
+          top: 47px;
+          right: 6px;
+          background: url(../images/read-more-icon.png);
+        }
+      }
+      .public-thumbnail-link {
+        margin: 10px;
+        padding-top: 15px;
+        border-top: 1px solid #d7d7d7;
+        color: #999999;
+        font-size: 20px;
+
+        .socials-btns-link {
+          display: inline-block;
+          cursor: pointer;
+          position: relative;
+
+          .fa-external-link {
+            color: #999999;
+          }
+
+          .share-btns {
+            list-style: none;
+            width: 50px;
+            background: #fff;
+            padding: 0px;
+            text-align: center;
+            position: absolute;
+            z-index: 5;
+            top: 32px;
+            right: -13px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #000;
+            padding-top: 6px !important;
+            display: none;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: -19px;
+              left: 31%;
+              border: 10px solid #fff;
+              border-top-color: transparent;
+              border-right-color: transparent;
+              border-left-color: transparent;
+            }
+
+            .share-btns-item {
+              margin-bottom: 8px;
+
+              a {
+                font-size: 16px;
+                padding: 8px;
+                border-radius: 5px;
+                color: #fff;
+
+                i {
+                  display: inline-block;
+                  width: 1em;
+                  margin-right: .2em;
+                  margin-left: .2em;
+                }
+              }
+            }
+          }
+        }
+
+        span {
+          font-family: RobotoR;
+          font-size: 14px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.socials-btns-link:hover > .share-btns {
+  display: inline-block !important;
+}
+
+.label-publications-top {
+  position: absolute;
+  font-size: 14px;
+  font-family: RobotoR;
+  font-weight: lighter;
+  background: @mygreen;
+  border-radius: 15px;
+  padding: 5px 11px 3px;
+  top: 15px;
+  left: 5px;
+}

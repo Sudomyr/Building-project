@@ -1,0 +1,105 @@
+.building-objects {
+
+  .object-list-item {
+    margin-bottom: 30px;
+
+    .object-img-container {
+      padding-right: 0px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .object-inform-container {
+      padding-left: 0px;
+
+      .object-inform-box {
+        background: #ededed;
+        padding: 8px 20px 8px 30px;
+        height: 266px;
+
+        .object-inform-header {
+
+          h3 {
+            font-family: RobotoB;
+            font-size: 36px;
+            color: @mygreen;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+        }
+        .object-inform-rating {
+          color: #ffd800;
+          font-size: 16px;
+        }
+        .object-date {
+          color: #86939e;
+          font-family: RobotoR;
+          font-size: 13px;
+        }
+        .object-inform-text {
+          font-family: RobotoR;
+          font-size: 12px;
+          color: #515151;
+          line-height: 16px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .object-link:hover {
+
+    .object-inform-box {
+      background: @mygreen;
+
+      .object-inform-header > h3 {
+        color: #ffffff;
+      }
+      .object-date {
+        color: #ffffff;
+      }
+      .object-inform-text {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.filter-buttons-box {
+
+  .filter-btn-list {
+    text-align: justify;
+    padding: 0px;
+
+    .active {
+      a {
+        color: #fcfcfc;
+        background: #21b25f;
+      }
+    }
+    li {
+      display: inline-block;
+
+      a {
+        border: 1px solid @mygreen;
+        padding: 10px 16px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-family: RobotoB;
+        color: @mygreen;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+          color: #fcfcfc;
+          background: #21b25f;
+        }
+      }
+    }
+  }
+  ul:after {
+    width: 100%;
+    content: '';
+    display: inline-block;
+  }
+}
